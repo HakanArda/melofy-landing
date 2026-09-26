@@ -184,6 +184,9 @@ button { font-family: inherit; }
 .label .reveal b { font-size: clamp(12px, 1.7vw, 16px); line-height: 1.05; }
 .label .reveal small { font-size: clamp(10px, 1.2vw, 12px); opacity: .85; }
 .label.open .mk { opacity: 0; transform: scale(.6) rotate(-40deg); }
+/* The spindle hole would sit on the revealed title, so it fades out with the mark. */
+.label::after { transition: opacity .3s; }
+.label.open::after { opacity: 0; }
 .label.open .reveal { opacity: 1; transform: none; }
 .tonearm { position: absolute; right: -2%; top: -3%; width: 42%; height: 76%; transform-origin: 78% 9%; transform: rotate(-26deg); transition: transform .9s var(--spring); pointer-events: none; filter: drop-shadow(0 12px 14px rgba(0,0,0,.6)); }
 .tonearm.down { transform: rotate(0deg); }
