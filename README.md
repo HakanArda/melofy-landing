@@ -3,7 +3,7 @@
 The public site for [Melofy](https://apps.apple.com/app/id6796313543), a music quiz
 game: hear a few seconds of a song, pick the answer before the clock runs out.
 
-**Live:** https://hakanarda.github.io/melofy-landing/
+**Live:** https://melofy.trust-software.com/
 
 A single static page: `index.html` (markup, styles and script in one file), the
 Tuffy font in `fonts/`, and Caveat from Google Fonts. There is no build step.
@@ -15,8 +15,11 @@ the footer, which loads from github.com.
 
 ## Deploy
 
-GitHub Pages serves the `main` branch from the repository root. Push to `main` and the
-site updates within a minute or two.
+Cloudflare Pages serves the `main` branch from the repository root (no build step) at
+melofy.trust-software.com. Push to `main` and the site updates within a minute or two.
+
+GitHub Pages still serves the same files at the old address,
+hakanarda.github.io/melofy-landing; the canonical tag points search engines here.
 
 ## Keeping the page current
 

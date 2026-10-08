@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://melofy.trust-software.com/sitemap.xml
